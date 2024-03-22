@@ -2,21 +2,33 @@ import SwiftUI
 
 struct AnimalsView: View {
     var body: some View {
+        VStack {
+            Text("ANIMALES")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.orange)
+        }
         HStack {
+            
             Image("cabello")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 250)
+                
             Image("gato")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 250)
+              
         }
         HStack {
             Image("perro")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 250)
+               
             Image("elefante")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 250)
+               
         }
     }
 }

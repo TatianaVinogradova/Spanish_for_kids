@@ -2,6 +2,14 @@ import SwiftUI
 
 struct FruitsView: View {
     var body: some View {
+        VStack {
+            Text("FRUTAS")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.orange)
+        }
+        
         HStack {
             Image("apple")
                 .resizable()
@@ -10,7 +18,7 @@ struct FruitsView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         }
-            HStack {
+        HStack {
             Image("coconut")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
